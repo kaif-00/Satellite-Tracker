@@ -48,7 +48,11 @@ body{
     padding: 6px 8px 6px 18px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 102, 0, 0.15);
     z-index: 50;
-    transition: all 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#satellite-panel.open ~ .search-box {
+    transform: translateX(calc(-5% + 85px));
 }
 
 .search-box:focus-within {
