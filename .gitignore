@@ -1,0 +1,5 @@
+.satell/
+.env
+__pycache__/
+*.pyc
+api.py
