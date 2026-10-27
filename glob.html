@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 3D Globe</title>
+    <link rel="stylesheet" href="first.css">
+
+</head>
+<body>
+    <nav class="navigation">
+        <h1 class="text">Saterlite Tracker</h1>
+        <a href="#" class="nav-link">Login</a>
+        <a href="#" class="nav-link">About me</a>
+        <a href="#" class="nav-link">Contact us</a>
+    </nav>
+
+    <!-- Left Side Information Panel -->
+    <div id="satellite-panel" class="satellite-panel">
+        <div class="panel-header">
+            <span class="panel-badge">Satellite Telemetry</span>
+            <button id="close-panel" class="close-btn" title="Close Panel">&times;</button>
+        </div>
+        <div class="panel-body">
+            <h2 id="panel-sat-name" class="sat-title">Select Satellite</h2>
+            <div class="sat-status-tag">
+                <span class="status-indicator"></span>
+                <span>TRACKING ACTIVE</span>
+            </div>
+
+            <div class="info-card">
+                <div class="info-row">
+                    <span class="info-label">Latitude</span>
+                    <span id="panel-sat-lat" class="info-val">--</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Longitude</span>
+                    <span id="panel-sat-lng" class="info-val">--</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Launch Date</span>
+                    <span id="panel-sat-launch" class="info-val">--</span>
+                </div>
+            </div>
+
+            <div class="telemetry-box">
+                <div class="telemetry-title">RADAR COORDINATES</div>
+                <div id="panel-radar-coords" class="telemetry-coords">LAT: -- | LON: --</div>
+            </div>
+        </div>
+    </div>
+    <input type="text" class="name" placeholder="Enter place">
+    <button class="go">Search</button>
+
+    <div id="globe"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/globe.gl"></script>
+    <script src="glob.js"></script>
+
+</body>
+</html>
