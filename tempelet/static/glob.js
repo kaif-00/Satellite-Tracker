@@ -178,7 +178,7 @@ myGlobe
 async function satellit_data(place) {
   if (!place || !place.trim()) return;
   try{
-    const res = await fetch(`http://127.0.0.1:8000/Data?name=${encodeURIComponent(place.trim())}`);
+    const res = await fetch(`/Data?name=${encodeURIComponent(place.trim())}`);
     if(!res.ok){
       const error = await res.json().catch(() => ({}));
       alert(error.detail || "Location not found or API error");
