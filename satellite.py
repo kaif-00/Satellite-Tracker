@@ -64,7 +64,7 @@ class contry_state:
     def __init__(self):
         self.geo = cache(3600)# so for geo we are using big time lmit because country city cordinates never
                              #changes 
-        self.sat = cache(40)# And for neo we are using small time lmit because sateelite cordinates changes 
+        self.sat = cache(249)# And for neo we are using small time lmit because sateelite cordinates changes 
                              #everytime
     def geo_data(self,name):
         
