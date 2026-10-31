@@ -109,7 +109,7 @@ class contry_state:
         try:
             api2 = os.getenv('api2')
             satellite_responce = requests.get(
-                f'https://api.n2yo.com/rest/v1/satellite/above/{data[0]}/{data[1]}/0/20/0/',
+                f'https://api.n2yo.com/rest/v1/satellite/above/{data[0]}/{data[1]}/0/15/0/',
                 params={'apiKey':api2},
                 timeout= 15
             )
